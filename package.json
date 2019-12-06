@@ -1,0 +1,9 @@
+{
+  "name": "lp",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "license": "MIT",
+  "author": "Andreas Stassivik <andreas@stassi.net> (https://github.com/Stassi)",
+  "repository": "github:Stassi/lp"
+}
