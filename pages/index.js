@@ -1,5 +1,3 @@
-import React from 'react'
+import Layout from '../components/Layout'
 
-const LP = () => <p>Hello</p>
-
-export default LP
+export default Layout
