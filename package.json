@@ -24,6 +24,9 @@
   "muiTheme": {
     "palette": {
       "primary": {
+        "main": "#81d4fa"
+      },
+      "secondary": {
         "main": "#03a9f4"
       },
       "type": "dark"
