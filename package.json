@@ -21,6 +21,14 @@
     "babel-eslint": "^10.0.3",
     "standard": "^14.3.1"
   },
+  "muiTheme": {
+    "palette": {
+      "primary": {
+        "main": "#03a9f4"
+      },
+      "type": "dark"
+    }
+  },
   "standard": {
     "parser": "babel-eslint"
   }
