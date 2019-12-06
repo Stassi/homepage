@@ -1,10 +1,6 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography'
+import AppBar from './AppBar'
 
-const Layout = () => (
-  <Typography>
-    Hello
-  </Typography>
-)
+const Layout = ({ titleText }) => <AppBar {...{ titleText }} />
 
 export default Layout
