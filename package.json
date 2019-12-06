@@ -6,6 +6,11 @@
   "license": "MIT",
   "author": "Andreas Stassivik <andreas@stassi.net> (https://github.com/Stassi)",
   "repository": "github:Stassi/lp",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
   "dependencies": {
     "next": "^9.1.4",
     "react": "^16.12.0",
