@@ -5,5 +5,9 @@
   "private": true,
   "license": "MIT",
   "author": "Andreas Stassivik <andreas@stassi.net> (https://github.com/Stassi)",
-  "repository": "github:Stassi/lp"
+  "repository": "github:Stassi/lp",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
