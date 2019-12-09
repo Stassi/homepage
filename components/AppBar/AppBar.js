@@ -5,12 +5,12 @@ import MenuButton from './MenuButton'
 import MoreButton from './MoreButton'
 import Title from './Title'
 
-const AppBar = ({ titleText: text }) => (
+const AppBar = () => (
   <MuiAppBar color='default' position='static'>
     <Toolbar>
       <MenuButton />
 
-      <Title {...{ text }} />
+      <Title {...{ text: '' }} />
 
       <MoreButton />
     </Toolbar>
