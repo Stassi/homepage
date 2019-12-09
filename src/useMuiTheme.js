@@ -5,6 +5,8 @@ import React, {
 } from 'react'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
+import Fade from '@material-ui/core/Fade'
+import IconButton from '@material-ui/core/IconButton'
 import DarkenIcon from '@material-ui/icons/Brightness4'
 import LightenIcon from '@material-ui/icons/Brightness7'
 
@@ -16,17 +18,6 @@ const useMuiTheme = initialState => {
     if (jssStyles) jssStyles.parentElement.removeChild(jssStyles)
   }, [])
 
-  const handleToggleDarkLight = useMemo(() => (ev) => {
-    ev.preventDefault()
-
-    setIntent(({ palette }) => ({
-      palette: {
-        ...palette,
-        type: palette.type === 'light' ? 'dark' : 'light'
-      }
-    }))
-  }, [])
-
   const theme = useMemo(() => createMuiTheme(intent), [intent])
 
   const Provider = useMemo(() => ({ children }) => (
@@ -36,12 +27,38 @@ const useMuiTheme = initialState => {
     </ThemeProvider>
   ), [theme])
 
+  const isLightTheme = useMemo(() => intent.palette.type === 'light', [intent])
+
+  const ToggleDarkLightButton = useMemo(() => props => (
+    <IconButton
+      onClick={(ev) => {
+        ev.preventDefault()
+
+        setIntent(({ palette }) => ({
+          palette: {
+            ...palette,
+            type: palette.type === 'light' ? 'dark' : 'light'
+          }
+        }))
+      }}
+      {...props}
+    >
+      {isLightTheme ? (
+        <Fade in timeout={1000}>
+          <DarkenIcon />
+        </Fade>
+      ) : (
+        <Fade in timeout={1000}>
+          <LightenIcon />
+        </Fade>
+      )}
+    </IconButton>
+  ), [isLightTheme])
+
   return {
-    DarkenIcon,
-    handleToggleDarkLight,
-    LightenIcon,
     Provider,
-    theme
+    theme,
+    ToggleDarkLightButton
   }
 }
 
