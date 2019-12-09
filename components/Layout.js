@@ -1,6 +1,12 @@
 import React from 'react'
 import AppBar from './AppBar'
+import Content from './Content'
 
-const Layout = ({ titleText }) => <AppBar {...{ titleText }} />
+const Layout = () => (
+  <>
+    <AppBar />
+    <Content />
+  </>
+)
 
 export default Layout
