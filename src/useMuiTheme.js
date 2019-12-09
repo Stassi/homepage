@@ -5,7 +5,6 @@ import React, {
 } from 'react'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import Fade from '@material-ui/core/Fade'
 import IconButton from '@material-ui/core/IconButton'
 import DarkenIcon from '@material-ui/icons/Brightness4'
 import LightenIcon from '@material-ui/icons/Brightness7'
@@ -43,15 +42,7 @@ const useMuiTheme = initialState => {
       }}
       {...props}
     >
-      {isLightTheme ? (
-        <Fade in timeout={1000}>
-          <DarkenIcon />
-        </Fade>
-      ) : (
-        <Fade in timeout={1000}>
-          <LightenIcon />
-        </Fade>
-      )}
+      {isLightTheme ? <DarkenIcon /> : <LightenIcon />}
     </IconButton>
   ), [isLightTheme])
 
