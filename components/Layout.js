@@ -2,10 +2,10 @@ import React from 'react'
 import AppBar from './AppBar'
 import Content from './Content'
 
-const Layout = () => (
+const Layout = props => (
   <>
-    <AppBar />
-    <Content />
+    <AppBar {...props} />
+    <Content {...props} />
   </>
 )
 
