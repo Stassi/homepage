@@ -6,8 +6,8 @@ const App = ({ Component, ...props }) => {
   const {
     titleText,
     theme: {
-      theme,
-      Provider: ThemeProvider
+      Provider: ThemeProvider,
+      ...themeProps
     }
   } = useApp()
 
@@ -22,8 +22,8 @@ const App = ({ Component, ...props }) => {
       <ThemeProvider>
         <Component
           {...{
-            theme,
             titleText,
+            ...themeProps,
             ...props
           }}
         />
