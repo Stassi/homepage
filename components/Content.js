@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
+import Fade from '@material-ui/core/Fade'
 import Grid from '@material-ui/core/Grid'
 import ProfileCard from './ProfileCard'
 
@@ -14,13 +15,15 @@ const Content = () => {
   const { root: rootClass } = useStyles()
 
   return (
-    <Container className={rootClass}>
-      <Grid container>
-        <Grid item xs>
-          <ProfileCard />
+    <Fade in>
+      <Container className={rootClass}>
+        <Grid container>
+          <Grid item xs>
+            <ProfileCard />
+          </Grid>
         </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </Fade>
   )
 }
 
