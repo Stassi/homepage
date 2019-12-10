@@ -11,7 +11,7 @@ const useStyles = makeStyles(({ spacing }) => ({
   }
 }))
 
-const Content = () => {
+const Content = props => {
   const { root: rootClass } = useStyles()
 
   return (
@@ -19,7 +19,7 @@ const Content = () => {
       <Container className={rootClass}>
         <Grid container>
           <Grid item xs>
-            <ProfileCard />
+            <ProfileCard {...props} />
           </Grid>
         </Grid>
       </Container>
