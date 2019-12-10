@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   }
 })
 
-const ProfileCard = () => {
+const ProfileCard = ({ localization: { Phrase } }) => {
   const {
     card: cardClass,
     media: mediaClass
@@ -31,18 +31,24 @@ const ProfileCard = () => {
 
         <CardContent>
           <Typography variant='h5'>
+            <Phrase>
             Andreas Stassivik
+            </Phrase>
           </Typography>
 
           <Typography color='textSecondary' variant='subtitle1'>
-            Software Developer
+            <Phrase>
+              Software Developer
+            </Phrase>
           </Typography>
         </CardContent>
       </CardActionArea>
 
       <CardActions>
         <Button color='secondary'>
-          View profile
+          <Phrase>
+            View profile
+          </Phrase>
         </Button>
       </CardActions>
     </Card>
