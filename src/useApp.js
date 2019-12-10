@@ -1,6 +1,15 @@
-import { muiTheme, name as titleText } from '../package'
+import {
+  language,
+  muiTheme,
+  name as titleText
+} from '../package'
+import useLocalization from './useLocalization'
 import useMuiTheme from './useMuiTheme'
 
-const useApp = () => ({ titleText, theme: useMuiTheme(muiTheme) })
+const useApp = () => ({
+  titleText,
+  localization: useLocalization(language),
+  theme: useMuiTheme(muiTheme)
+})
 
 export default useApp
