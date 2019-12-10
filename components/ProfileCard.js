@@ -31,9 +31,7 @@ const ProfileCard = ({ localization: { Phrase } }) => {
 
         <CardContent>
           <Typography variant='h5'>
-            <Phrase>
             Andreas Stassivik
-            </Phrase>
           </Typography>
 
           <Typography color='textSecondary' variant='subtitle1'>
