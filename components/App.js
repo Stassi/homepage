@@ -5,6 +5,7 @@ import useApp from '../src/useApp'
 const App = ({ Component, ...props }) => {
   const {
     titleText,
+    localization,
     theme: {
       Provider: ThemeProvider,
       ...themeProps
@@ -22,6 +23,7 @@ const App = ({ Component, ...props }) => {
       <ThemeProvider>
         <Component
           {...{
+            localization,
             titleText,
             ...themeProps,
             ...props
