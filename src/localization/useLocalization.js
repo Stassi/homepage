@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import languages from './localization/languages'
+import languages from './languages'
 
 const useLocalization = initialState => {
   // TODO: Set intent
