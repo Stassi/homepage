@@ -1,21 +1,20 @@
 import React from 'react'
-import MuiAppBar from '@material-ui/core/AppBar'
 import Slide from '@material-ui/core/Slide'
-import Toolbar from '@material-ui/core/Toolbar'
+import AppBarFixed from './AppBarFixed'
 import MenuButton from './MenuButton'
 import Title from './Title'
 
 const AppBar = ({ ToggleDarkLightButton }) => (
   <Slide in>
-    <MuiAppBar color='default' position='static'>
-      <Toolbar>
+    <div>
+      <AppBarFixed color='default'>
         <MenuButton />
 
-        <Title {...{ text: '' }} />
+        <Title />
 
         <ToggleDarkLightButton />
-      </Toolbar>
-    </MuiAppBar>
+      </AppBarFixed>
+    </div>
   </Slide>
 )
 
