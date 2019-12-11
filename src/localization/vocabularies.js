@@ -35,6 +35,7 @@ import tur from './tur'
 import ukr from './ukr'
 import urd from './urd'
 import vie from './vie'
+import z͎̙̩͝a̵͕͓̹͖̱ͅl̡̯͉ from './z͎̙̩͝a̵͕͓̹͖̱ͅl̡̯͉'
 import zhos from './zhos'
 import zhot from './zhot'
 
@@ -76,6 +77,7 @@ const vocabularies = {
   ukr,
   urd,
   vie,
+  z͎̙̩͝a̵͕͓̹͖̱ͅl̡̯͉,
   zhos,
   zhot
 }
