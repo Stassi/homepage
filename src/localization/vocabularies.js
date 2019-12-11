@@ -21,6 +21,7 @@ import jpn from './jpn'
 import kor from './kor'
 import msa from './msa'
 import nld from './nld'
+import non from './non'
 import nor from './nor'
 import pol from './pol'
 import por from './por'
@@ -61,6 +62,7 @@ const vocabularies = {
   kor,
   msa,
   nld,
+  non,
   nor,
   pol,
   por,
