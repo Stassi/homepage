@@ -20,6 +20,7 @@ import swa from './swa'
 import swe from './swe'
 import tur from './tur'
 import ukr from './ukr'
+import vie from './vie'
 import zhos from './zhos'
 import zhot from './zhot'
 
@@ -46,6 +47,7 @@ const vocabularies = {
   swe,
   tur,
   ukr,
+  vie,
   zhos,
   zhot
 }
