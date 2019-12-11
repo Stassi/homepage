@@ -23,22 +23,28 @@
     "standard": "^14.3.1"
   },
   "languageDefault": "eng",
-  "languages": [{
-    "endonym": "English",
-    "iso639": "eng"
-  }, {
-    "endonym": "Íslensku",
-    "iso639": "isl"
-  }, {
-    "endonym": "한국어",
-    "iso639": "kor"
-  }, {
-    "endonym": "Norsk",
-    "iso639": "nor"
-  }, {
-    "endonym": "Svenska",
-    "iso639": "swe"
-  }],
+  "languages": [
+    {
+      "endonym": "English",
+      "iso639": "eng"
+    },
+    {
+      "endonym": "Íslensku",
+      "iso639": "isl"
+    },
+    {
+      "endonym": "한국어",
+      "iso639": "kor"
+    },
+    {
+      "endonym": "Norsk",
+      "iso639": "nor"
+    },
+    {
+      "endonym": "Svenska",
+      "iso639": "swe"
+    }
+  ],
   "muiThemeDefault": {
     "palette": {
       "primary": {
