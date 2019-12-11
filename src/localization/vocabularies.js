@@ -11,6 +11,7 @@ import fra from './fra'
 import fin from './fin'
 import heb from './heb'
 import hin from './hin'
+import ina from './ina'
 import ind from './ind'
 import isl from './isl'
 import ita from './ita'
@@ -48,6 +49,7 @@ const vocabularies = {
   fin,
   heb,
   hin,
+  ina,
   ind,
   isl,
   ita,
