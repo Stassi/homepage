@@ -1,4 +1,5 @@
 import dan from './dan'
+import deu from './deu'
 import eng from './eng'
 import fra from './fra'
 import fin from './fin'
@@ -19,6 +20,7 @@ import zhot from './zhot'
 
 const vocabularies = {
   dan,
+  deu,
   eng,
   fra,
   fin,
