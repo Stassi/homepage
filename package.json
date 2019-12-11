@@ -25,6 +25,10 @@
   "languageDefault": "eng",
   "languages": [
     {
+      "endonym": "عربى",
+      "iso639": "arb"
+    },
+    {
       "endonym": "Čeština",
       "iso639": "ces"
     },

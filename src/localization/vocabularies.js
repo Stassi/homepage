@@ -1,3 +1,4 @@
+import arb from './arb'
 import ces from './ces'
 import dan from './dan'
 import deu from './deu'
@@ -20,6 +21,7 @@ import zhos from './zhos'
 import zhot from './zhot'
 
 const vocabularies = {
+  arb,
   ces,
   dan,
   deu,
