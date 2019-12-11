@@ -47,7 +47,7 @@ const LanguageMenu = ({
           >
             <ListItemAvatar>
               <Avatar variant='rounded'>
-                {iso639}
+                {iso639.length === 4 ? 'zho' : iso639}
               </Avatar>
             </ListItemAvatar>
             <Typography variant='inherit'>

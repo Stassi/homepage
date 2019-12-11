@@ -8,6 +8,8 @@ import nor from './nor'
 import rus from './rus'
 import swa from './swa'
 import swe from './swe'
+import zhos from './zhos'
+import zhot from './zhot'
 
 const vocabularies = {
   dan,
@@ -19,7 +21,9 @@ const vocabularies = {
   nor,
   rus,
   swa,
-  swe
+  swe,
+  zhos,
+  zhot
 }
 
 export default vocabularies

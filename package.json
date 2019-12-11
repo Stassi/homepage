@@ -63,6 +63,14 @@
     {
       "endonym": "Svenska",
       "iso639": "swe"
+    },
+    {
+      "endonym": "汉语",
+      "iso639": "zhos"
+    },
+    {
+      "endonym": "漢語",
+      "iso639": "zhot"
     }
   ],
   "muiThemeDefault": {
