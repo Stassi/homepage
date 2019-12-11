@@ -7,7 +7,11 @@ import Typography from '@material-ui/core/Typography'
 import LanguageIcon from '@material-ui/icons/Language'
 import useMuiMenu from '../src/useMuiMenu'
 
-const LanguageMenu = ({ languages, menuId = 'language-menu' }) => {
+const LanguageMenu = ({
+  languages,
+  localization: { language },
+  menuId = 'language-menu'
+}) => {
   const {
     anchorEl,
     close,
@@ -29,7 +33,11 @@ const LanguageMenu = ({ languages, menuId = 'language-menu' }) => {
         open={isOpen}
       >
         {languages.map(({ endonym, iso639 }) => (
-          <MenuItem key={iso639} onClick={close}>
+          <MenuItem
+            key={iso639}
+            onClick={close}
+            selected={iso639 === language}
+          >
             <ListItemAvatar>
               <Avatar variant='rounded'>
                 {iso639}
