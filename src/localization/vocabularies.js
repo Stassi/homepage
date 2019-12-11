@@ -4,6 +4,7 @@ import fin from './fin'
 import isl from './isl'
 import kor from './kor'
 import nor from './nor'
+import swa from './swa'
 import swe from './swe'
 
 const vocabularies = {
@@ -13,6 +14,7 @@ const vocabularies = {
   isl,
   kor,
   nor,
+  swa,
   swe
 }
 
