@@ -1,7 +1,7 @@
 import {
   languageDefault,
   languages,
-  muiTheme,
+  muiThemeDefault,
   name as titleText
 } from '../package'
 import useLocalization from './useLocalization'
@@ -11,7 +11,7 @@ const useApp = () => ({
   languages,
   titleText,
   localization: useLocalization(languageDefault),
-  theme: useMuiTheme(muiTheme)
+  theme: useMuiTheme(muiThemeDefault)
 })
 
 export default useApp

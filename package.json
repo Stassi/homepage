@@ -30,7 +30,7 @@
     "endonym": "Norsk",
     "iso639": "nor"
   }],
-  "muiTheme": {
+  "muiThemeDefault": {
     "palette": {
       "primary": {
         "main": "#81d4fa"
