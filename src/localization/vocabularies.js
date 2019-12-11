@@ -4,6 +4,7 @@ import dan from './dan'
 import deu from './deu'
 import ell from './ell'
 import eng from './eng'
+import fas from './fas'
 import fra from './fra'
 import fin from './fin'
 import heb from './heb'
@@ -32,6 +33,7 @@ const vocabularies = {
   deu,
   ell,
   eng,
+  fas,
   fra,
   fin,
   heb,
