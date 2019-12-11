@@ -22,7 +22,14 @@
     "babel-eslint": "^10.0.3",
     "standard": "^14.3.1"
   },
-  "language": "english",
+  "languageDefault": "eng",
+  "languages": [{
+    "endonym": "English",
+    "iso639": "eng"
+  }, {
+    "endonym": "Norsk",
+    "iso639": "nor"
+  }],
   "muiTheme": {
     "palette": {
       "primary": {
