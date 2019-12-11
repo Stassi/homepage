@@ -2,8 +2,7 @@ import { useMemo, useState } from 'react'
 import vocabularies from './localization/vocabularies'
 
 const useLocalization = initialState => {
-  // TODO: Set language
-  const [language] = useState(initialState)
+  const [language, setLanguage] = useState(initialState)
 
   const vocabulary = useMemo(() => vocabularies[language], [language])
 
@@ -12,7 +11,11 @@ const useLocalization = initialState => {
     [vocabulary]
   )
 
-  return { language, Phrase }
+  return {
+    language,
+    Phrase,
+    setLanguage
+  }
 }
 
 export default useLocalization

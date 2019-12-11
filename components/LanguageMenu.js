@@ -9,7 +9,10 @@ import useMuiMenu from '../src/useMuiMenu'
 
 const LanguageMenu = ({
   languages,
-  localization: { language },
+  localization: {
+    language,
+    setLanguage
+  },
   menuId = 'language-menu'
 }) => {
   const {
@@ -35,7 +38,11 @@ const LanguageMenu = ({
         {languages.map(({ endonym, iso639 }) => (
           <MenuItem
             key={iso639}
-            onClick={close}
+            onClick={(ev) => {
+              ev.preventDefault()
+              close()
+              setLanguage(iso639)
+            }}
             selected={iso639 === language}
           >
             <ListItemAvatar>
