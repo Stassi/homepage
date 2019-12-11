@@ -3,6 +3,7 @@ import eng from './eng'
 import fra from './fra'
 import fin from './fin'
 import heb from './heb'
+import hin from './hin'
 import isl from './isl'
 import kor from './kor'
 import nor from './nor'
@@ -22,6 +23,7 @@ const vocabularies = {
   fra,
   fin,
   heb,
+  hin,
   isl,
   kor,
   nor,
