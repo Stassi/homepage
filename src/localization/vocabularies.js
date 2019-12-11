@@ -25,6 +25,7 @@ import slk from './slk'
 import spa from './spa'
 import swa from './swa'
 import swe from './swe'
+import tam from './tam'
 import tur from './tur'
 import ukr from './ukr'
 import vie from './vie'
@@ -59,6 +60,7 @@ const vocabularies = {
   spa,
   swa,
   swe,
+  tam,
   tur,
   ukr,
   vie,
