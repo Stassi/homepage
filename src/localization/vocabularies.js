@@ -15,6 +15,7 @@ import isl from './isl'
 import ita from './ita'
 import jpn from './jpn'
 import kor from './kor'
+import nld from './nld'
 import nor from './nor'
 import pol from './pol'
 import por from './por'
@@ -46,6 +47,7 @@ const vocabularies = {
   ita,
   jpn,
   kor,
+  nld,
   nor,
   pol,
   por,
