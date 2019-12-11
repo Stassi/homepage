@@ -1,3 +1,4 @@
+import ces from './ces'
 import dan from './dan'
 import deu from './deu'
 import eng from './eng'
@@ -19,6 +20,7 @@ import zhos from './zhos'
 import zhot from './zhot'
 
 const vocabularies = {
+  ces,
   dan,
   deu,
   eng,
