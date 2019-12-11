@@ -25,6 +25,10 @@
   "languageDefault": "eng",
   "languages": [
     {
+      "endonym": "Dansk",
+      "iso639": "dan"
+    },
+    {
       "endonym": "English",
       "iso639": "eng"
     },
