@@ -20,6 +20,7 @@ import nor from './nor'
 import pol from './pol'
 import por from './por'
 import rus from './rus'
+import slk from './slk'
 import spa from './spa'
 import swa from './swa'
 import swe from './swe'
@@ -52,6 +53,7 @@ const vocabularies = {
   pol,
   por,
   rus,
+  slk,
   spa,
   swa,
   swe,
