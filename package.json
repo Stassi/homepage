@@ -29,6 +29,9 @@
   }, {
     "endonym": "Norsk",
     "iso639": "nor"
+  }, {
+    "endonym": "Svenska",
+    "iso639": "swe"
   }],
   "muiThemeDefault": {
     "palette": {
