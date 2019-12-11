@@ -5,10 +5,9 @@ import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
 import LanguageIcon from '@material-ui/icons/Language'
-import languages from '../src/languages'
 import useMuiMenu from '../src/useMuiMenu'
 
-const LanguageMenu = ({ menuId = 'language-menu' }) => {
+const LanguageMenu = ({ languages, menuId = 'language-menu' }) => {
   const {
     anchorEl,
     close,
