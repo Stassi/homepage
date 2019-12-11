@@ -13,6 +13,7 @@ import jpn from './jpn'
 import kor from './kor'
 import nor from './nor'
 import pol from './pol'
+import por from './por'
 import rus from './rus'
 import spa from './spa'
 import swa from './swa'
@@ -38,6 +39,7 @@ const vocabularies = {
   kor,
   nor,
   pol,
+  por,
   rus,
   spa,
   swa,
