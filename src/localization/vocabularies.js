@@ -29,6 +29,7 @@ import swe from './swe'
 import tam from './tam'
 import tur from './tur'
 import ukr from './ukr'
+import urd from './urd'
 import vie from './vie'
 import zhos from './zhos'
 import zhot from './zhot'
@@ -65,6 +66,7 @@ const vocabularies = {
   tam,
   tur,
   ukr,
+  urd,
   vie,
   zhos,
   zhot
