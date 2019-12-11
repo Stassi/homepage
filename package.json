@@ -109,6 +109,14 @@
       "iso639": "nor"
     },
     {
+      "endonym": "Polskie",
+      "iso639": "pol"
+    },
+    {
+      "endonym": "Português",
+      "iso639": "por"
+    },
+    {
       "endonym": "Русский язык",
       "iso639": "rus"
     },
@@ -125,20 +133,12 @@
       "iso639": "swa"
     },
     {
-      "endonym": "தமிழ்",
-      "iso639": "tam"
-    },
-    {
-      "endonym": "Polskie",
-      "iso639": "pol"
-    },
-    {
-      "endonym": "Português",
-      "iso639": "por"
-    },
-    {
       "endonym": "Svenska",
       "iso639": "swe"
+    },
+    {
+      "endonym": "தமிழ்",
+      "iso639": "tam"
     },
     {
       "endonym": "Türkçe",
