@@ -9,6 +9,7 @@ import fin from './fin'
 import heb from './heb'
 import hin from './hin'
 import isl from './isl'
+import ita from './ita'
 import jpn from './jpn'
 import kor from './kor'
 import nor from './nor'
@@ -36,6 +37,7 @@ const vocabularies = {
   heb,
   hin,
   isl,
+  ita,
   jpn,
   kor,
   nor,
