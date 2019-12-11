@@ -6,6 +6,7 @@ import isl from './isl'
 import kor from './kor'
 import nor from './nor'
 import rus from './rus'
+import spa from './spa'
 import swa from './swa'
 import swe from './swe'
 import zhos from './zhos'
@@ -20,6 +21,7 @@ const vocabularies = {
   kor,
   nor,
   rus,
+  spa,
   swa,
   swe,
   zhos,
