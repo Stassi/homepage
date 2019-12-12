@@ -19,12 +19,14 @@ const useMuiTheme = initialState => {
 
   const theme = useMemo(() => createMuiTheme(intent), [intent])
 
-  const Provider = useMemo(() => ({ children }) => (
-    <ThemeProvider {...{ theme }}>
-      <CssBaseline />
-      {children}
-    </ThemeProvider>
-  ), [theme])
+  const Provider = useMemo(() => function Theme ({ children, ...props }) {
+    return (
+      <ThemeProvider {...{ theme, ...props }}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
+    )
+  }, [theme])
 
   const isLightTheme = useMemo(() => intent.palette.type === 'light', [intent])
 
