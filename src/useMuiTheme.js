@@ -30,23 +30,28 @@ const useMuiTheme = initialState => {
 
   const isLightTheme = useMemo(() => intent.palette.type === 'light', [intent])
 
-  const ToggleDarkLightButton = useMemo(() => props => (
-    <IconButton
-      onClick={(ev) => {
-        ev.preventDefault()
+  const ToggleDarkLightButton = useMemo(
+    () => function ToggleDarkLightButton (props) {
+      return (
+        <IconButton
+          onClick={(ev) => {
+            ev.preventDefault()
 
-        setIntent(({ palette }) => ({
-          palette: {
-            ...palette,
-            type: palette.type === 'light' ? 'dark' : 'light'
-          }
-        }))
-      }}
-      {...props}
-    >
-      {isLightTheme ? <DarkenIcon /> : <LightenIcon />}
-    </IconButton>
-  ), [isLightTheme])
+            setIntent(({ palette }) => ({
+              palette: {
+                ...palette,
+                type: palette.type === 'light' ? 'dark' : 'light'
+              }
+            }))
+          }}
+          {...props}
+        >
+          {isLightTheme ? <DarkenIcon /> : <LightenIcon />}
+        </IconButton>
+      )
+    },
+    [isLightTheme]
+  )
 
   return {
     Provider,
