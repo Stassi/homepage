@@ -11,20 +11,22 @@ const useMuiMenu = (id = 'menu') => {
 
   const isOpen = useMemo(() => Boolean(anchorEl), [anchorEl])
 
-  const IconButton = useMemo(() => ({ children, ...props }) => (
-    <MuiIconButton
-      aria-controls={id}
-      aria-haspopup='true'
-      aria-label={id}
-      onClick={ev => {
-        ev.preventDefault()
-        setAnchorEl(ev.currentTarget)
-      }}
-      {...props}
-    >
-      {children}
-    </MuiIconButton>
-  ), [])
+  const IconButton = useMemo(() => function MenuIconButton ({ children, ...props }) {
+    return (
+      <MuiIconButton
+        aria-controls={id}
+        aria-haspopup='true'
+        aria-label={id}
+        onClick={ev => {
+          ev.preventDefault()
+          setAnchorEl(ev.currentTarget)
+        }}
+        {...props}
+      >
+        {children}
+      </MuiIconButton>
+    )
+  }, [])
 
   return {
     anchorEl,
