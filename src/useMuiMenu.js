@@ -11,7 +11,7 @@ const useMuiMenu = (id = 'menu') => {
 
   const isOpen = useMemo(() => Boolean(anchorEl), [anchorEl])
 
-  const IconButton = useMemo(() => function MenuIconButton ({ children, ...props }) {
+  const IconButton = useMemo(() => function MenuIconButton ({ ...props }) {
     return (
       <MuiIconButton
         aria-controls={id}
@@ -22,9 +22,7 @@ const useMuiMenu = (id = 'menu') => {
           setAnchorEl(ev.currentTarget)
         }}
         {...props}
-      >
-        {children}
-      </MuiIconButton>
+      />
     )
   }, [])
 
