@@ -1,0 +1,62 @@
+[
+  {
+    "icon": "css",
+    "text": "CSS",
+    "url": "https://en.wikipedia.org/wiki/Cascading_Style_Sheets"
+  },
+  {
+    "icon": "html",
+    "text": "HTML",
+    "url": "https://en.wikipedia.org/wiki/HTML"
+  },
+  {
+    "icon": "javascript",
+    "text": "JavaScript",
+    "url": "https://en.wikipedia.org/wiki/JavaScript"
+  },
+  {
+    "icon": "atlassian",
+    "text": "JIRA",
+    "url": "https://en.wikipedia.org/wiki/Jira_(software)"
+  },
+  {
+    "icon": "mui",
+    "text": "Material-UI",
+    "url": "https://material-ui.com"
+  },
+  {
+    "icon": "meteor",
+    "text": "Meteor",
+    "url": "https://en.wikipedia.org/wiki/Meteor_(web_framework)"
+  },
+  {
+    "icon": "node",
+    "text": "Node.js",
+    "url": "https://en.wikipedia.org/wiki/Node.js"
+  },
+  {
+    "icon": "php",
+    "text": "PHP",
+    "url": "https://en.wikipedia.org/wiki/PHP"
+  },
+  {
+    "icon": "python",
+    "text": "Python",
+    "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+  },
+  {
+    "icon": "lambda",
+    "text": "Ramda",
+    "url": "https://ramdajs.com"
+  },
+  {
+    "icon": "react",
+    "text": "React",
+    "url": "https://en.wikipedia.org/wiki/React_(web_framework)"
+  },
+  {
+    "icon": "rubyOnRails",
+    "text": "Ruby on Rails",
+    "url": "https://en.wikipedia.org/wiki/Ruby_on_Rails"
+  }
+]
