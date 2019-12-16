@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "textToSpeech",
+    "text": "Computational linguistics",
+    "url": "https://en.wikipedia.org/wiki/Computational_linguistics"
+  },
+  {
+    "icon": "beaker",
+    "text": "Design of experiments",
+    "url": "https://en.wikipedia.org/wiki/Design_of_experiments"
+  },
+  {
+    "icon": "timeline",
+    "text": "Discrete-event simulation",
+    "url": "https://en.wikipedia.org/wiki/Discrete-event_simulation"
+  },
+  {
+    "icon": "shopping",
+    "text": "E-commerce",
+    "url": "https://en.wikipedia.org/wiki/E-commerce"
+  },
+  {
+    "icon": "sprout",
+    "text": "Generative systems",
+    "url": "https://en.wikipedia.org/wiki/Generative_systems"
+  },
+  {
+    "icon": "newspaper",
+    "text": "News media",
+    "url": "https://en.wikipedia.org/wiki/News_media"
+  }
+]
