@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   }
 })
 
-const ProfileCard = ({ router, localization: { Phrase } }) => {
+const ProfileCard = ({ router, localization: { Translate } }) => {
   const {
     card: cardClass,
     media: mediaClass
@@ -35,7 +35,7 @@ const ProfileCard = ({ router, localization: { Phrase } }) => {
           </Typography>
 
           <Typography color='textSecondary' variant='subtitle1'>
-            <Phrase text='Software Developer' />
+            <Translate text='Software Developer' />
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -48,7 +48,7 @@ const ProfileCard = ({ router, localization: { Phrase } }) => {
             router.push('/andreas-stassivik/profile')
           }}
         >
-          <Phrase text='View profile' />
+          <Translate text='View profile' />
         </Button>
       </CardActions>
     </Card>

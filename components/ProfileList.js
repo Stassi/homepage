@@ -15,7 +15,11 @@ const useStyles = makeStyles(({ palette }) => ({
   }
 }))
 
-const ProfileList = ({ data, subheaderText }) => {
+const ProfileList = ({
+  data,
+  subheaderText,
+  localization: { Translate }
+}) => {
   const { avatar: avatarClass } = useStyles()
 
   return (
@@ -45,7 +49,7 @@ const ProfileList = ({ data, subheaderText }) => {
                 <Icon name={icon} />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary={text} />
+            <ListItemText primary={<Translate {...{ text }} />} />
           </ListItem>
         ))}
       </List>

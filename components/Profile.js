@@ -23,7 +23,7 @@ const useStyles = makeStyles(({ spacing }) => ({
 
 const Profile = ({
   localization,
-  localization: { Phrase },
+  localization: { Translate },
   ...props
 }) => {
   const {
@@ -66,7 +66,7 @@ const Profile = ({
                 gutterBottom
                 variant='h5'
               >
-                <Phrase text='Software Developer' />
+                <Translate text='Software Developer' />
               </Typography>
             </Grid>
 
@@ -89,7 +89,7 @@ const Profile = ({
                 <ProfileList
                   data={domains}
                   subheaderText='Domains'
-                  {...props}
+                  {...{ localization, ...props }}
                 />
               </Grid>
 
@@ -97,7 +97,7 @@ const Profile = ({
                 <ProfileList
                   data={proficiencies}
                   subheaderText='Proficiencies'
-                  {...props}
+                  {...{ localization, ...props }}
                 />
               </Grid>
             </Grid>
