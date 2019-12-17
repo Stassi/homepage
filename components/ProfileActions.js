@@ -47,10 +47,10 @@ const ProfileActions = ({ router }) => {
             // TODO: Replace file with static route
             router.push('/andreas-stassivik-resume.pdf')
           }}
-          startIcon={<MdiIcon name='pdf' />}
+          startIcon={<MdiIcon name='fileDownload' />}
           variant='outlined'
         >
-          View résumé
+          Download résumé
         </Button>
       </Grid>
     </Grid>
