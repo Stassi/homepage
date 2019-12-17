@@ -1,7 +1,7 @@
 import React from 'react'
 import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 import { makeStyles } from '@material-ui/core/styles'
+import MdiIcon from './MdiIcon'
 
 const useStyles = makeStyles(({ spacing }) => ({
   root: {
@@ -20,7 +20,7 @@ const MenuButton = props => {
       edge='start'
       {...props}
     >
-      <MenuIcon />
+      <MdiIcon name='menu' />
     </IconButton>
   )
 }
