@@ -35,9 +35,7 @@ const ProfileCard = ({ router, localization: { Phrase } }) => {
           </Typography>
 
           <Typography color='textSecondary' variant='subtitle1'>
-            <Phrase>
-              Software Developer
-            </Phrase>
+            <Phrase text='Software Developer' />
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -50,9 +48,7 @@ const ProfileCard = ({ router, localization: { Phrase } }) => {
             router.push('/andreas-stassivik/profile')
           }}
         >
-          <Phrase>
-            View profile
-          </Phrase>
+          <Phrase text='View profile' />
         </Button>
       </CardActions>
     </Card>

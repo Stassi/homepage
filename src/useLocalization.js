@@ -6,8 +6,8 @@ const useLocalization = initialState => {
 
   const vocabulary = useMemo(() => vocabularies[language], [language])
 
-  const Phrase = useMemo(() => function Phrase ({ children: phrase }) {
-    return vocabulary[phrase] || phrase
+  const Phrase = useMemo(() => function Phrase ({ text }) {
+    return vocabulary[text] || text
   }, [vocabulary])
 
   return {

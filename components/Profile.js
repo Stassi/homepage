@@ -66,9 +66,7 @@ const Profile = ({
                 gutterBottom
                 variant='h5'
               >
-                <Phrase>
-                Software Developer
-                </Phrase>
+                <Phrase text='Software Developer' />
               </Typography>
             </Grid>
 
