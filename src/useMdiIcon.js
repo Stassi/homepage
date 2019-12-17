@@ -2,6 +2,7 @@ import React, { useMemo } from 'react'
 import SvgIcon from '@material-ui/core/SvgIcon'
 import {
   mdiAtlassian as atlassian,
+  mdiArrowUp as arrowUp,
   mdiBeaker as beaker,
   mdiBrightness4 as darken,
   mdiBrightness7 as lighten,
@@ -29,6 +30,7 @@ import {
 } from '@mdi/js'
 
 const icons = {
+  arrowUp,
   atlassian,
   beaker,
   css,

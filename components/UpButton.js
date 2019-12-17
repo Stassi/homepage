@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import Icon from './Icon'
 
 const useStyles = makeStyles(({ spacing }) => ({
   root: {
@@ -20,7 +20,7 @@ const UpButton = props => {
       edge='start'
       {...props}
     >
-      <ArrowUpwardIcon />
+      <Icon name='arrowUp' />
     </IconButton>
   )
 }
