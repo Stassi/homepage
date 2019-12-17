@@ -15,16 +15,11 @@ const useStyles = makeStyles(({ palette }) => ({
   }
 }))
 
-const ProfileList = ({
-  data,
-  router,
-  subheaderText,
-  ...props
-}) => {
+const ProfileList = ({ data, subheaderText }) => {
   const { avatar: avatarClass } = useStyles()
 
   return (
-    <Paper {...props}>
+    <Paper>
       <List
         subheader={(
           <ListSubheader disableSticky>
