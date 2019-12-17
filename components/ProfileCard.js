@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   }
 })
 
-const ProfileCard = ({ localization: { Phrase } }) => {
+const ProfileCard = ({ router, localization: { Phrase } }) => {
   const {
     card: cardClass,
     media: mediaClass
@@ -43,7 +43,13 @@ const ProfileCard = ({ localization: { Phrase } }) => {
       </CardActionArea>
 
       <CardActions>
-        <Button color='secondary'>
+        <Button
+          color='secondary'
+          onClick={(ev) => {
+            ev.preventDefault()
+            router.push('/andreas-stassivik/profile')
+          }}
+        >
           <Phrase>
             View profile
           </Phrase>
