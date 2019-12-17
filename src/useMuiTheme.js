@@ -6,8 +6,7 @@ import React, {
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import IconButton from '@material-ui/core/IconButton'
-import DarkenIcon from '@material-ui/icons/Brightness4'
-import LightenIcon from '@material-ui/icons/Brightness7'
+import MdiIcon from '../components/MdiIcon'
 
 const useMuiTheme = initialState => {
   const [intent, setIntent] = useState(initialState)
@@ -46,7 +45,7 @@ const useMuiTheme = initialState => {
           }}
           {...props}
         >
-          {isLightTheme ? <DarkenIcon /> : <LightenIcon />}
+          {isLightTheme ? <MdiIcon name='darken' /> : <MdiIcon name='lighten' />}
         </IconButton>
       )
     },
