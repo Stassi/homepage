@@ -18,7 +18,7 @@ const useStyles = makeStyles(({ palette }) => ({
 const ProfileList = ({
   data,
   subheaderText,
-  localization: { Translate }
+  localization: { translate }
 }) => {
   const { avatar: avatarClass } = useStyles()
 
@@ -41,7 +41,7 @@ const ProfileList = ({
             key={text}
             onClick={ev => {
               ev.preventDefault()
-              window.location = url
+              window.location = translate(url)
             }}
           >
             <ListItemAvatar>
@@ -49,7 +49,7 @@ const ProfileList = ({
                 <Icon name={icon} />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary={<Translate {...{ text }} />} />
+            <ListItemText primary={translate(text)} />
           </ListItem>
         ))}
       </List>

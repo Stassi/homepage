@@ -23,7 +23,7 @@ const useStyles = makeStyles(({ spacing }) => ({
 
 const Profile = ({
   localization,
-  localization: { Translate },
+  localization: { translate },
   ...props
 }) => {
   const {
@@ -54,7 +54,7 @@ const Profile = ({
                 component='h1'
                 variant='h2'
               >
-              Andreas Stassivik
+                Andreas Stassivik
               </Typography>
             </Grid>
 
@@ -66,7 +66,7 @@ const Profile = ({
                 gutterBottom
                 variant='h5'
               >
-                <Translate text='Software Developer' />
+                {translate('Software Developer')}
               </Typography>
             </Grid>
 
