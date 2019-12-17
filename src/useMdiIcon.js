@@ -56,7 +56,7 @@ const icons = {
   translate
 }
 
-const useMdi = ({ name }) => useMemo(() => function Mdi () {
+const useMdiIcon = ({ name }) => useMemo(() => function MdiIcon () {
   return (
     <SvgIcon aria-label={name}>
       <path d={icons[name]} />
@@ -64,4 +64,4 @@ const useMdi = ({ name }) => useMemo(() => function Mdi () {
   )
 }, [name])
 
-export default useMdi
+export default useMdiIcon

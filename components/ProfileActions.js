@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
-import MdiIcon from './MdiIcon'
+import Icon from './Icon'
 
 const useStyles = makeStyles({
   maxHeight: {
@@ -30,7 +30,7 @@ const ProfileActions = ({ router }) => {
             ev.preventDefault()
             window.location = 'https://github.com/Stassi'
           }}
-          startIcon={<MdiIcon name='github' />}
+          startIcon={<Icon name='github' />}
           variant='contained'
         >
           View GitHub profile
@@ -47,7 +47,7 @@ const ProfileActions = ({ router }) => {
             // TODO: Replace file with static route
             router.push('/andreas-stassivik-resume.pdf')
           }}
-          startIcon={<MdiIcon name='fileDownload' />}
+          startIcon={<Icon name='fileDownload' />}
           variant='outlined'
         >
           Download résumé

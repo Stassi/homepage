@@ -7,7 +7,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import ListItemText from '@material-ui/core/ListItemText'
 import ListSubheader from '@material-ui/core/ListSubheader'
 import Paper from '@material-ui/core/Paper'
-import MdiIcon from './MdiIcon'
+import Icon from './Icon'
 
 const useStyles = makeStyles(({ palette }) => ({
   avatar: {
@@ -42,7 +42,7 @@ const ProfileList = ({ data, subheaderText }) => {
           >
             <ListItemAvatar>
               <Avatar className={avatarClass}>
-                <MdiIcon name={icon} />
+                <Icon name={icon} />
               </Avatar>
             </ListItemAvatar>
             <ListItemText primary={text} />
