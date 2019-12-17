@@ -21,7 +21,8 @@ import {
   mdiShopping as shopping,
   mdiSprout as sprout,
   mdiTextToSpeech as textToSpeech,
-  mdiTimeline as timeline
+  mdiTimeline as timeline,
+  mdiTranslate as translate
 } from '@mdi/js'
 
 const icons = {
@@ -45,7 +46,8 @@ const icons = {
   shopping,
   sprout,
   textToSpeech,
-  timeline
+  timeline,
+  translate
 }
 
 const useMdi = ({ name }) => useMemo(() => function Mdi () {

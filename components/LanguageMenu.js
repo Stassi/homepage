@@ -4,7 +4,7 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
-import LanguageIcon from '@material-ui/icons/Language'
+import MdiIcon from './MdiIcon'
 import useMuiMenu from '../src/useMuiMenu'
 
 const LanguageMenu = ({
@@ -25,7 +25,7 @@ const LanguageMenu = ({
   return (
     <div>
       <IconButton>
-        <LanguageIcon />
+        <MdiIcon name='translate' />
       </IconButton>
 
       <Menu
