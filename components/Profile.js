@@ -4,7 +4,9 @@ import Container from '@material-ui/core/Container'
 import Divider from '@material-ui/core/Divider'
 import Fade from '@material-ui/core/Fade'
 import Grid from '@material-ui/core/Grid'
+import Slide from '@material-ui/core/Slide'
 import Typography from '@material-ui/core/Typography'
+import Footer from './Footer'
 import ProfileActions from './ProfileActions'
 import ProfileAppBar from './ProfileAppBar'
 import ProfileList from './ProfileList'
@@ -14,7 +16,8 @@ import proficiencies from '../src/proficiencies'
 
 const useStyles = makeStyles(({ spacing }) => ({
   container: {
-    paddingTop: spacing(2)
+    paddingTop: spacing(2),
+    paddingBottom: spacing(4)
   },
   divider: {
     margin: spacing(1, 0)
@@ -104,6 +107,10 @@ const Profile = ({
           </Grid>
         </Container>
       </Fade>
+
+      <Slide in direction='up'>
+        <Footer />
+      </Slide>
     </>
   )
 }
