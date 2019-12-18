@@ -5,10 +5,10 @@ import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
 import Icon from './Icon'
+import languages from '../src/languages'
 import useMuiMenu from '../src/useMuiMenu'
 
 const LanguageMenu = ({
-  languages,
   localization: {
     language,
     setLanguage

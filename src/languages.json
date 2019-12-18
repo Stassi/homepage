@@ -1,0 +1,162 @@
+[
+  {
+    "endonym": "عربى",
+    "iso639": "ara"
+  },
+  {
+    "endonym": "বাংলা",
+    "iso639": "ben"
+  },
+  {
+    "endonym": "Čeština",
+    "iso639": "ces"
+  },
+  {
+    "endonym": "Dansk",
+    "iso639": "dan"
+  },
+  {
+    "endonym": "Deutsch",
+    "iso639": "deu"
+  },
+  {
+    "endonym": "Dothraki",
+    "iso639": "dki"
+  },
+  {
+    "endonym": "Ελληνικά",
+    "iso639": "ell"
+  },
+  {
+    "endonym": "English",
+    "iso639": "eng"
+  },
+  {
+    "endonym": "Esperanto",
+    "iso639": "epo"
+  },
+  {
+    "endonym": "فارسی",
+    "iso639": "fas"
+  },
+  {
+    "endonym": "Suomen kieli",
+    "iso639": "fin"
+  },
+  {
+    "endonym": "Français",
+    "iso639": "fra"
+  },
+  {
+    "endonym": "עברית",
+    "iso639": "heb"
+  },
+  {
+    "endonym": "हिन्दी",
+    "iso639": "hin"
+  },
+  {
+    "endonym": "Ido",
+    "iso639": "ido"
+  },
+  {
+    "endonym": "Interlingua",
+    "iso639": "ina"
+  },
+  {
+    "endonym": "Bahasa Indonesia",
+    "iso639": "ind"
+  },
+  {
+    "endonym": "Íslensku",
+    "iso639": "isl"
+  },
+  {
+    "endonym": "Italiano",
+    "iso639": "ita"
+  },
+  {
+    "endonym": "日本語",
+    "iso639": "jpn"
+  },
+  {
+    "endonym": "한국어",
+    "iso639": "kor"
+  },
+  {
+    "endonym": "Bahasa Melayu",
+    "iso639": "msa"
+  },
+  {
+    "endonym": "Nederlands",
+    "iso639": "nld"
+  },
+  {
+    "endonym": "Norrønt mál",
+    "iso639": "non"
+  },
+  {
+    "endonym": "Norsk",
+    "iso639": "nor"
+  },
+  {
+    "endonym": "Polskie",
+    "iso639": "pol"
+  },
+  {
+    "endonym": "Português",
+    "iso639": "por"
+  },
+  {
+    "endonym": "Русский язык",
+    "iso639": "rus"
+  },
+  {
+    "endonym": "Slovenčina",
+    "iso639": "slk"
+  },
+  {
+    "endonym": "Español",
+    "iso639": "spa"
+  },
+  {
+    "endonym": "Kiswahili",
+    "iso639": "swa"
+  },
+  {
+    "endonym": "Svenska",
+    "iso639": "swe"
+  },
+  {
+    "endonym": "தமிழ்",
+    "iso639": "tam"
+  },
+  {
+    "endonym": "Türkçe",
+    "iso639": "tur"
+  },
+  {
+    "endonym": "Українська мова",
+    "iso639": "ukr"
+  },
+  {
+    "endonym": "اُردُو",
+    "iso639": "urd"
+  },
+  {
+    "endonym": "Tiếng Việt",
+    "iso639": "vie"
+  },
+  {
+    "endonym": "O̸̼͙͇̻̮̬U̸R͓̫̞̻͉͝ ̺͕̰͕͍̝̥V̮̪̹̠̰O̪̬̹̤I̠͙̠̝̲̣C̴È͓̞̦",
+    "iso639": "z͎̙̩͝a̵͕͓̹͖̱ͅl̡̯͉"
+  },
+  {
+    "endonym": "汉语",
+    "iso639": "zhos"
+  },
+  {
+    "endonym": "漢語",
+    "iso639": "zhot"
+  }
+]
