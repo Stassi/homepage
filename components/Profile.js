@@ -108,7 +108,7 @@ const Profile = ({
         </Container>
       </Fade>
 
-      <Slide in direction='up'>
+      <Slide direction='up' in>
         <Footer />
       </Slide>
     </>
