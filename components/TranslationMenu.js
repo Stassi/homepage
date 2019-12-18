@@ -8,7 +8,7 @@ import Icon from './Icon'
 import languages from '../src/languages'
 import useMuiMenu from '../src/useMuiMenu'
 
-const LanguageMenu = ({
+const TranslationMenu = ({
   localization: {
     language,
     setLanguage
@@ -60,4 +60,4 @@ const LanguageMenu = ({
   )
 }
 
-export default LanguageMenu
+export default TranslationMenu

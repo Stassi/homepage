@@ -1,8 +1,8 @@
 import React from 'react'
 import Slide from '@material-ui/core/Slide'
 import AppBarFixed from './AppBarFixed'
-import LanguageMenu from './LanguageMenu'
 import Title from './Title'
+import TranslationMenu from './TranslationMenu'
 import UpButton from './UpButton'
 
 const ProfileAppBar = ({
@@ -22,7 +22,7 @@ const ProfileAppBar = ({
 
         <Title text='Profile' />
 
-        <LanguageMenu {...props} />
+        <TranslationMenu {...props} />
 
         <ToggleDarkLightButton />
       </AppBarFixed>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Slide from '@material-ui/core/Slide'
 import AppBarFixed from './AppBarFixed'
-import LanguageMenu from './LanguageMenu'
 import MenuButton from './MenuButton'
 import Title from './Title'
+import TranslationMenu from './TranslationMenu'
 
 const AppBar = ({ ToggleDarkLightButton, ...props }) => (
   <Slide in>
@@ -13,7 +13,7 @@ const AppBar = ({ ToggleDarkLightButton, ...props }) => (
 
         <Title />
 
-        <LanguageMenu {...props} />
+        <TranslationMenu {...props} />
 
         <ToggleDarkLightButton />
       </AppBarFixed>
