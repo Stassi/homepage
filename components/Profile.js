@@ -16,8 +16,8 @@ import proficiencies from '../src/proficiencies'
 
 const useStyles = makeStyles(({ spacing }) => ({
   container: {
-    paddingTop: spacing(2),
-    paddingBottom: spacing(4)
+    paddingBottom: spacing(4),
+    paddingTop: spacing(2)
   },
   divider: {
     margin: spacing(1, 0)
