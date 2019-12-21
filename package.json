@@ -14,6 +14,8 @@
   "dependencies": {
     "@material-ui/core": "^4.7.2",
     "@mdi/js": "^4.7.95",
+    "implausible": "^3.0.2",
+    "markovian-nlp": "^7.0.3",
     "next": "^9.1.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
