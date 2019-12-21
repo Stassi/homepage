@@ -22,6 +22,14 @@
     "babel-eslint": "^10.0.3",
     "standard": "^14.3.1"
   },
+  "attribution": [
+    {
+      "artist": "Godfrey Kneller",
+      "file": "john-locke.png",
+      "license": "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)",
+      "url": "https://commons.wikimedia.org/wiki/File:John_Locke_Crop.png"
+    }
+  ],
   "languageDefault": "eng",
   "muiThemeDefault": {
     "palette": {
