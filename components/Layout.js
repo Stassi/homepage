@@ -2,13 +2,17 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import Fade from '@material-ui/core/Fade'
+import Grid from '@material-ui/core/Grid'
 import Slide from '@material-ui/core/Slide'
 import AppBar from './AppBar'
+import BlackwellPortraitCard from './BlackwellPortraitCard'
 import Footer from './Footer'
+import LockePortraitCard from './LockePortraitCard'
+import NumberGeneratorCard from './NumberGeneratorCard'
 import ProfileCard from './ProfileCard'
 
 const useStyles = makeStyles(({ spacing }) => ({
-  cardContainer: {
+  cardsContainer: {
     paddingBottom: spacing(8),
     paddingTop: spacing(2)
   },
@@ -24,7 +28,7 @@ const useStyles = makeStyles(({ spacing }) => ({
 
 const Layout = props => {
   const {
-    cardContainer: cardContainerClass,
+    cardsContainer: cardsContainerClass,
     grow: growClass,
     root: rootClass
   } = useStyles()
@@ -35,8 +39,24 @@ const Layout = props => {
         <div>
           <AppBar {...props} />
 
-          <Container className={cardContainerClass}>
-            <ProfileCard {...props} />
+          <Container className={cardsContainerClass}>
+            <Grid alignItems='center' container spacing={2}>
+              <Grid item sm xs={12}>
+                <BlackwellPortraitCard {...props} />
+              </Grid>
+
+              <Grid item sm xs={12}>
+                <LockePortraitCard {...props} />
+              </Grid>
+
+              <Grid item sm xs={12}>
+                <ProfileCard {...props} />
+              </Grid>
+
+              <Grid item xs>
+                <NumberGeneratorCard {...props} />
+              </Grid>
+            </Grid>
           </Container>
         </div>
       </Fade>
