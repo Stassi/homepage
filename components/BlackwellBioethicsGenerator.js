@@ -3,9 +3,13 @@ import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import Fade from '@material-ui/core/Fade'
 import Slide from '@material-ui/core/Slide'
+import { ngramsDistribution } from 'markovian-nlp'
 import Footer from './Footer'
 import ProfileAppBar from './ProfileAppBar'
-import BlackwellBioethicsGeneratorCard from './BlackwellBioethicsGeneratorCard'
+import SentenceGeneratorCard from './SentenceGeneratorCard'
+import blackwellConscience from '../src/corpora/blackwellConscience'
+
+const distribution = ngramsDistribution(blackwellConscience)
 
 const useStyles = makeStyles(({ spacing }) => ({
   container: {
@@ -15,7 +19,7 @@ const useStyles = makeStyles(({ spacing }) => ({
   root: {}
 }))
 
-const BlackwellBioethicsGenerator = ({ localization, ...props }) => {
+const BlackwellBioethicsGenerator = props => {
   const {
     container: containerClass,
     root: rootClass
@@ -23,12 +27,12 @@ const BlackwellBioethicsGenerator = ({ localization, ...props }) => {
 
   return (
     <>
-      <ProfileAppBar {...{ localization, ...props }} />
+      <ProfileAppBar {...props} />
 
       <div className={rootClass}>
         <Fade in>
           <Container className={containerClass}>
-            <BlackwellBioethicsGeneratorCard />
+            <SentenceGeneratorCard {...{ distribution }} />
           </Container>
         </Fade>
 

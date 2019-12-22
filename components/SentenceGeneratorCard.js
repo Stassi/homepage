@@ -1,25 +1,14 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-import { ngramsDistribution } from 'markovian-nlp'
 import Icon from './Icon'
-import blackwellConscience from '../src/corpora/blackwellConscience'
 import useMarkovianNlp from '../src/useMarkovianNlp'
 
-const distribution = ngramsDistribution(blackwellConscience)
-
-const useStyles = makeStyles({
-  root: {}
-})
-
-const BlackwellBioethicsGeneratorCard = () => {
-  const {} = useStyles()
-
+const SentenceGeneratorCard = ({ distribution }) => {
   const {
     evolve,
     reseed,
@@ -36,10 +25,7 @@ const BlackwellBioethicsGeneratorCard = () => {
             evolve()
           }}
         >
-          <Typography
-            color='textPrimary'
-            variant='h4'
-          >
+          <Typography color='textPrimary' variant='h4'>
             {`"…${result}…"`}
           </Typography>
         </CardActionArea>
@@ -74,4 +60,4 @@ const BlackwellBioethicsGeneratorCard = () => {
   )
 }
 
-export default BlackwellBioethicsGeneratorCard
+export default SentenceGeneratorCard
