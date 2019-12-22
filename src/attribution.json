@@ -1,0 +1,30 @@
+[
+  {
+    "file": "lockesEpistle.json",
+    "id": "5052941",
+    "license": "CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)",
+    "name": "An Essay Concerning Human Understanding",
+    "url": "https://en.wikisource.org/w/index.php?title=An_Essay_Concerning_Human_Understanding"
+  },
+  {
+    "file": "john-locke-portrait.png",
+    "id": "327024847",
+    "license": "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)",
+    "name": "Portrait of John Locke",
+    "url": "https://commons.wikimedia.org/wiki/File:John_Locke_Crop.png"
+  },
+  {
+    "file": "public/elizabeth-blackwell-portrait.jpg",
+    "id": "294010031",
+    "license": false,
+    "name": "Portrait of Elizabeth Blackwell",
+    "url": "https://commons.wikimedia.org/wiki/File:EBlackwell1905.jpg"
+  },
+  {
+    "file": "blackwellConscience.json",
+    "id": "7475250",
+    "license": "CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)",
+    "name": "Scientific Method in Biology",
+    "url": "https://en.wikisource.org/wiki/Scientific_Method_in_Biology"
+  }
+]
