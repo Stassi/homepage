@@ -3,9 +3,13 @@ import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import Fade from '@material-ui/core/Fade'
 import Slide from '@material-ui/core/Slide'
+import { ngramsDistribution } from 'markovian-nlp'
 import Footer from './Footer'
 import ProfileAppBar from './ProfileAppBar'
-import LockeEpistleGeneratorCard from './LockeEpistleGeneratorCard'
+import SentenceGeneratorCard from './SentenceGeneratorCard'
+import lockesEpistle from '../src/corpora/lockesEpistle'
+
+const distribution = ngramsDistribution(lockesEpistle)
 
 const useStyles = makeStyles(({ spacing }) => ({
   container: {
@@ -15,7 +19,7 @@ const useStyles = makeStyles(({ spacing }) => ({
   root: {}
 }))
 
-const LockeEpistleGenerator = ({ localization, ...props }) => {
+const LockeEpistleGenerator = props => {
   const {
     container: containerClass,
     root: rootClass
@@ -23,12 +27,12 @@ const LockeEpistleGenerator = ({ localization, ...props }) => {
 
   return (
     <>
-      <ProfileAppBar {...{ localization, ...props }} />
+      <ProfileAppBar {...props} />
 
       <div className={rootClass}>
         <Fade in>
           <Container className={containerClass}>
-            <LockeEpistleGeneratorCard />
+            <SentenceGeneratorCard {...{ distribution }} />
           </Container>
         </Fade>
 
