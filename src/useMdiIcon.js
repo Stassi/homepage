@@ -22,8 +22,10 @@ import {
   mdiMenu as menu,
   mdiNodejs as node,
   mdiReact as react,
+  mdiReload as reload,
   mdiShopping as shopping,
   mdiSprout as sprout,
+  mdiStepForward as stepForward,
   mdiTextToSpeech as textToSpeech,
   mdiTimeline as timeline,
   mdiTranslate as translate
@@ -50,9 +52,11 @@ const icons = {
   php,
   python,
   react,
+  reload,
   rubyOnRails,
   shopping,
   sprout,
+  stepForward,
   textToSpeech,
   timeline,
   translate
