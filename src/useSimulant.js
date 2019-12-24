@@ -1,6 +1,7 @@
 import React, {
   useEffect,
-  useMemo
+  useMemo,
+  useState
 } from 'react'
 import { prng, sample } from 'implausible'
 
@@ -60,13 +61,10 @@ const validRedirectPath = ({
 }) => `/debug/generate/${simulant}/${works}/${algorithm}/${seed}`
 
 const useSimulant = props => {
+  const [redirect, setRedirect] = useState(null)
+
   useEffect(() => {
-    const {
-      router,
-      router: {
-        query
-      }
-    } = props
+    const { router: { query } } = props
 
     const generatedParameters = generateParameters(query)
 
@@ -75,12 +73,16 @@ const useSimulant = props => {
       query
     })
 
-    if (redirectNeeded) router.push(validRedirectPath(generatedParameters))
+    if (redirectNeeded) setRedirect(validRedirectPath(generatedParameters))
   }, [])
 
+  useEffect(() => {
+    if (redirect) props.router.push(redirect)
+  }, [redirect])
+
   const Simulant = useMemo(() => function Simulant (props) {
-    return <div {...props} />
-  }, [])
+    return redirect ? null : <div {...props} />
+  }, [redirect])
 
   return { Simulant }
 }
