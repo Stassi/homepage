@@ -4,13 +4,6 @@ import React, {
 } from 'react'
 import { prng, sample } from 'implausible'
 
-const parametersNeedRedirection = ({
-  generatedParameters,
-  query
-}) => !!Object
-  .keys(generatedParameters)
-  .find(key => generatedParameters[key] !== query[key])
-
 const simulantAndWorks = ({ simulant, works }) => ({
   simulant,
   works: ({
@@ -52,6 +45,20 @@ const generateParameters = ({
   })
 })
 
+const queryAndGeneratedParamsDiffer = ({
+  generatedParameters,
+  query
+}) => !!Object
+  .keys(generatedParameters)
+  .find(key => generatedParameters[key] !== query[key])
+
+const validRedirectPath = ({
+  algorithm,
+  seed,
+  simulant,
+  works
+}) => `/debug/generate/${simulant}/${works}/${algorithm}/${seed}`
+
 const useSimulant = props => {
   useEffect(() => {
     const {
@@ -63,16 +70,12 @@ const useSimulant = props => {
 
     const generatedParameters = generateParameters(query)
 
-    if (parametersNeedRedirection({ generatedParameters, query })) {
-      const {
-        algorithm,
-        seed,
-        simulant,
-        works
-      } = generatedParameters
+    const redirectNeeded = queryAndGeneratedParamsDiffer({
+      generatedParameters,
+      query
+    })
 
-      router.push(`/debug/generate/${simulant}/${works}/${algorithm}/${seed}`)
-    }
+    if (redirectNeeded) router.push(validRedirectPath(generatedParameters))
   }, [])
 
   const Simulant = useMemo(() => function Simulant (props) {
