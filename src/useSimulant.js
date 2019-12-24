@@ -1,4 +1,7 @@
-import { useEffect } from 'react'
+import React, {
+  useEffect,
+  useMemo
+} from 'react'
 import { prng, sample } from 'implausible'
 
 const parametersNeedRedirection = ({
@@ -71,6 +74,12 @@ const useSimulant = props => {
       router.push(`/debug/generate/${simulant}/${works}/${algorithm}/${seed}`)
     }
   }, [])
+
+  const Simulant = useMemo(() => function Simulant (props) {
+    return <div {...props} />
+  }, [])
+
+  return { Simulant }
 }
 
 export default useSimulant

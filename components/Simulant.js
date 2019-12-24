@@ -1,10 +1,10 @@
+import React from 'react'
 import useSimulant from '../src/useSimulant'
 
 const Simulant = props => {
-  useSimulant(props)
+  const { Simulant } = useSimulant(props)
 
-  // TODO: Render
-  return null
+  return <Simulant />
 }
 
 export default Simulant
