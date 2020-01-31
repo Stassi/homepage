@@ -1,3 +1,3 @@
-import Layout from '../components/Layout'
+import ProfileSimple from '../components/ProfileSimple'
 
-export default Layout
+export default ProfileSimple
