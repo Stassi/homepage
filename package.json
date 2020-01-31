@@ -12,11 +12,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@material-ui/core": "^4.8.1",
-    "@mdi/js": "^4.7.95",
+    "@material-ui/core": "^4.9.0",
+    "@mdi/js": "^4.8.95",
     "implausible": "^3.0.3",
     "markovian-nlp": "^7.0.4",
-    "next": "^9.1.6",
+    "next": "^9.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
